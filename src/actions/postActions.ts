@@ -5,7 +5,7 @@ import { notificationTypes } from '../reducers/notificationReducer';
 import { ExtraPost, LIMIT_POSTS_PER_LOADING, Post, PostAction, postActionTypes, PostErrorAction, PostList, PostSuccessAction } from '../reducers/postReducer';
 import { HashTag, UserInfo } from '../reducers/userReducer';
 import { store } from "../store";
-import { generateUsernameKeywords, Timestamp, getImageClass } from '../utils';
+import { generateUsernameKeywords, Timestamp } from '../utils';
 import { LoadMoreCommentListSuccess } from './commentActions';
 import { CreateNotificationRequest } from './notificationActions';
 
@@ -393,11 +393,7 @@ export const CreatePostRequest = (postData: Post):
             hashTagList = Array.from(new Set(hashTagList))
             postData.hashtags = [...hashTagList]
             if (rq.size > 0) {
-                const labels = await Promise.all(
-                    postData.source?.map(async img => {
-                        return await getImageClass(img.uri)
-                    }) || []
-                )
+                const labels: never[] = []
                 ref.collection('posts').doc(`${uid}`).set({
                     ...postData,
                     uid,

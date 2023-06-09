@@ -9,7 +9,6 @@ import { defaultUserState } from '../reducers/userReducer';
 import { convertToFirebaseDatabasePathName } from '../utils';
 //Define API ClASSIFY
 export const APP_NAME = 'Instagram'
-export const CLASSIFY_API = 'http://192.168.1.2:5555/classify'
 const firebaseConfig = {
     apiKey: "AIzaSyATgIePHiOXnqlzUN4rRyyaPw4CTWH7yWA",
     authDomain: "vucms-7f6fa.firebaseapp.com",

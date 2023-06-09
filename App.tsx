@@ -15,7 +15,7 @@ import SplashScreen from 'react-native-splash-screen'
 import { PersistGate } from 'redux-persist/integration/react';
 import RootStackNavigation from './src/navigations';
 import { persistor, store } from './src/store';
-import { getImageClass, convertToFirebaseDatabasePathName } from './src/utils';
+import { convertToFirebaseDatabasePathName } from './src/utils';
 import { firestore, database } from 'firebase';
 import { Post } from './src/reducers/postReducer';
 YellowBox.ignoreWarnings([

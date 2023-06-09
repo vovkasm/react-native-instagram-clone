@@ -25,8 +25,8 @@ type StoryText = {
     text: string,
     x: number,
     y: number,
-    animX: Animated.Value,
-    animY: Animated.Value,
+    animX?: Animated.Value,
+    animY?: Animated.Value,
     fontSize: number,
     width: number,
     height: number,
@@ -34,7 +34,7 @@ type StoryText = {
     textAlign: 'flex-start' | 'center' | 'flex-end',
     color: string,
     ratio: number,
-    animRatio: Animated.Value,
+    animRatio?: Animated.Value,
     zIndex: number,
 }
 export type StoryLabel = {
@@ -43,13 +43,13 @@ export type StoryLabel = {
     text: string,
     x: number,
     y: number,
-    animX: Animated.Value,
-    animY: Animated.Value,
+    animX?: Animated.Value,
+    animY?: Animated.Value,
     fontSize: number,
     width: number,
     height: number,
     ratio: number,
-    animRatio: Animated.Value,
+    animRatio?: Animated.Value,
     zIndex: number,
 }
 export type StoryProcessedImage = {
@@ -286,8 +286,8 @@ const StoryProcessor = ({ route }: StoryProcessorProps) => {
                 }).start(() => ref.current.zoomTrashCan = false)
             }
         }
-        label.animX.setValue((label.x + translationX) * label.ratio)
-        label.animY.setValue((label.y + translationY) * label.ratio)
+        label.animX?.setValue((label.x + translationX) * label.ratio)
+        label.animY?.setValue((label.y + translationY) * label.ratio)
     }
     const _onTextLabelTranslateChangeState = (index: number,
         { nativeEvent: {
@@ -315,7 +315,7 @@ const StoryProcessor = ({ route }: StoryProcessorProps) => {
         } }: PinchGestureHandlerGestureEvent
     ) => {
         const label = ref.current.processImages[currentImageIndex].texts[index]
-        label.animRatio.setValue(label.ratio * scale)
+        label.animRatio?.setValue(label.ratio * scale)
     }
     const _onTextLabelZoomChangeState = (index: number,
         { nativeEvent: {
@@ -402,8 +402,8 @@ const StoryProcessor = ({ route }: StoryProcessorProps) => {
                 }).start(() => ref.current.zoomTrashCan = false)
             }
         }
-        label.animX.setValue((label.x + translationX) * label.ratio)
-        label.animY.setValue((label.y + translationY) * label.ratio)
+        label.animX?.setValue((label.x + translationX) * label.ratio)
+        label.animY?.setValue((label.y + translationY) * label.ratio)
     }
     const _onLabelTranslateChangeState = (index: number,
         { nativeEvent: {
@@ -431,7 +431,7 @@ const StoryProcessor = ({ route }: StoryProcessorProps) => {
         } }: PinchGestureHandlerGestureEvent
     ) => {
         const label = ref.current.processImages[currentImageIndex].labels[index]
-        label.animRatio.setValue(label.ratio * scale)
+        label.animRatio?.setValue(label.ratio * scale)
     }
     const _onLabelZoomChangeState = (index: number,
         { nativeEvent: {
