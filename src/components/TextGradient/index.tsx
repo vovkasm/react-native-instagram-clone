@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, StyleProp, TextStyle, TextProps } from 'react-native'
-import MaskedView from '@react-native-community/masked-view'
+import MaskedView from '@react-native-masked-view/masked-view'
 import LinearGradient from 'react-native-linear-gradient'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 export interface TextGradient extends TextProps {

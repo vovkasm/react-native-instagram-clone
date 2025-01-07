@@ -1,4 +1,4 @@
-import CameraRoll from '@react-native-community/cameraroll'
+import CameraRoll from '@react-native-camera-roll/camera-roll'
 import { RouteProp } from '@react-navigation/native'
 import { storage } from 'firebase'
 import React, { useEffect, useRef, useState } from 'react'

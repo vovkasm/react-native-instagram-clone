@@ -1,4 +1,4 @@
-import CameraRoll from '@react-native-community/cameraroll'
+import CameraRoll from '@react-native-camera-roll/camera-roll'
 import ImageEditor, { ImageCropData } from '@react-native-community/image-editor'
 import { RouteProp } from '@react-navigation/native'
 import { StackNavigationProp } from '@react-navigation/stack'
