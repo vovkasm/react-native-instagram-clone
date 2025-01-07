@@ -1,4 +1,4 @@
-import Clipboard from '@react-native-community/clipboard'
+import Clipboard from '@react-native-clipboard/clipboard'
 import { RouteProp } from '@react-navigation/native'
 import { firestore } from 'firebase'
 import React, { useState } from 'react'

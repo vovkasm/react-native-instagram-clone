@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
-import Clipboard from '@react-native-community/clipboard'
+import Clipboard from '@react-native-clipboard/clipboard'
 import { navigation, goBack, navigate } from '../../navigations/rootNavigation'
 import { SCREEN_WIDTH } from '../../constants'
 import { SuperRootStackParamList } from '../../navigations'

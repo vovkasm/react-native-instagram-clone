@@ -14,8 +14,8 @@
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.1.0",
     "@react-native-camera-roll/camera-roll": "^7.9.0",
+    "@react-native-clipboard/clipboard": "^1.15.0",
     "@react-native-community/blur": "^4.4.1",
-    "@react-native-community/clipboard": "^1.5.1",
     "@react-native-community/image-editor": "^4.2.1",
     "@react-native-masked-view/masked-view": "^0.3.2",
     "@react-navigation/bottom-tabs": "^6",
@@ -39,7 +39,7 @@
     "react-native-contacts": "^5.2.0",
     "react-native-fast-image": "^8.1.5",
     "react-native-gesture-handler": "^2.21.2",
-    "react-native-image-filter-kit": "^0.7.1",
+    "react-native-image-filter-kit": "^0.8.0",
     "react-native-linear-gradient": "^2.5.6",
     "react-native-maps": "^1.20.1",
     "react-native-pager-view": "^6.6.1",
