@@ -1027,8 +1027,29 @@ PODS:
   - react-native-image-filter-kit (0.7.7):
     - Bolts/Tasks (= 1.9.0)
     - React
-  - react-native-maps (0.27.1):
-    - React
+  - react-native-maps (1.20.1):
+    - React-Core
+  - react-native-pager-view (6.6.1):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Codegen
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - react-native-safe-area-context (5.0.0):
     - React-Core
   - react-native-splash-screen (3.3.0):
@@ -1312,7 +1333,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNPermissions (2.2.2):
+  - RNPermissions (5.2.2):
     - React-Core
   - RNScreens (4.4.0):
     - DoubleConversion
@@ -1411,6 +1432,7 @@ DEPENDENCIES:
   - "react-native-image-editor (from `../node_modules/@react-native-community/image-editor`)"
   - react-native-image-filter-kit (from `../node_modules/react-native-image-filter-kit`)
   - react-native-maps (from `../node_modules/react-native-maps`)
+  - react-native-pager-view (from `../node_modules/react-native-pager-view`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
   - React-nativeconfig (from `../node_modules/react-native/ReactCommon`)
@@ -1534,6 +1556,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-image-filter-kit"
   react-native-maps:
     :path: "../node_modules/react-native-maps"
+  react-native-pager-view:
+    :path: "../node_modules/react-native-pager-view"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   react-native-splash-screen:
@@ -1647,7 +1671,8 @@ SPEC CHECKSUMS:
   react-native-contacts: 7b5e16196278636030c3fbbb9505543984b01697
   react-native-image-editor: 770361131aae8a52bbfeb0b738296384ee6ccb3e
   react-native-image-filter-kit: 67625a103a9cdc29211a230ee9215c09c1c1942d
-  react-native-maps: f4b89da81626ad7f151a8bfcb79733295d31ce5c
+  react-native-maps: ee1e65647460c3d41e778071be5eda10e3da6225
+  react-native-pager-view: d6ba3ce982b734f3217b6351263c5edb0e3ed1ec
   react-native-safe-area-context: ab7beb734b0f9f79f55ae144a6c946a6422f55d6
   react-native-splash-screen: 4312f786b13a81b5169ef346d76d33bc0c6dc457
   React-nativeconfig: c36a079fa219a9911070cc0058b746407e1ef47d
@@ -1678,7 +1703,7 @@ SPEC CHECKSUMS:
   RNCMaskedView: da52ec927af4b4c3f3f6b5b5e816a69be62fe642
   RNFastImage: 5c9c9fed9c076e521b3f509fe79e790418a544e8
   RNGestureHandler: 6fee3422fd8c81c5ee756fa72e3d1780e9943d9d
-  RNPermissions: 5df468064df661a4c8c017e2791ce90d7695eea5
+  RNPermissions: 48c2de95ba332d8d185b2624c87e21a0526f7352
   RNScreens: 024c5cb8569dea6667b5c73e6c119beb83f686f0
   RNShare: 7e22ba3bf66294ff7c122a1f2da8a8ec642091a0
   RNSVG: d7d7bc8229af3842c9cfc3a723c815a52cdd1105
