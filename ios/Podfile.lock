@@ -1,5 +1,4 @@
 PODS:
-  - Bolts/Tasks (1.9.0)
   - boost (1.83.0)
   - BVLinearGradient (2.8.3):
     - React-Core
@@ -1024,9 +1023,6 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-image-filter-kit (0.8.0):
-    - Bolts/Tasks (= 1.9.0)
-    - React
   - react-native-maps (1.20.1):
     - React-Core
   - react-native-pager-view (6.6.1):
@@ -1430,7 +1426,6 @@ DEPENDENCIES:
   - "react-native-cameraroll (from `../node_modules/@react-native-camera-roll/camera-roll`)"
   - react-native-contacts (from `../node_modules/react-native-contacts`)
   - "react-native-image-editor (from `../node_modules/@react-native-community/image-editor`)"
-  - react-native-image-filter-kit (from `../node_modules/react-native-image-filter-kit`)
   - react-native-maps (from `../node_modules/react-native-maps`)
   - react-native-pager-view (from `../node_modules/react-native-pager-view`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
@@ -1472,7 +1467,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Bolts
     - libwebp
     - SDWebImage
     - SDWebImageWebPCoder
@@ -1552,8 +1546,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-contacts"
   react-native-image-editor:
     :path: "../node_modules/@react-native-community/image-editor"
-  react-native-image-filter-kit:
-    :path: "../node_modules/react-native-image-filter-kit"
   react-native-maps:
     :path: "../node_modules/react-native-maps"
   react-native-pager-view:
@@ -1632,7 +1624,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   boost: d3f49c53809116a5d38da093a8aa78bf551aed09
   BVLinearGradient: 880f91a7854faff2df62518f0281afb1c60d49a3
   DoubleConversion: 76ab83afb40bddeeee456813d9c04f67f78771b5
@@ -1670,7 +1661,6 @@ SPEC CHECKSUMS:
   react-native-cameraroll: 91b4ea51d8c74f20ca4fc1bde7474a52c7f1286b
   react-native-contacts: 7b5e16196278636030c3fbbb9505543984b01697
   react-native-image-editor: 770361131aae8a52bbfeb0b738296384ee6ccb3e
-  react-native-image-filter-kit: d79137549eb44f8215b7f2be5e77213f605e2c92
   react-native-maps: ee1e65647460c3d41e778071be5eda10e3da6225
   react-native-pager-view: d6ba3ce982b734f3217b6351263c5edb0e3ed1ec
   react-native-safe-area-context: ab7beb734b0f9f79f55ae144a6c946a6422f55d6
